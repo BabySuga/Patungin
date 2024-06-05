@@ -85,7 +85,7 @@
         android:background="@drawable/button3"
         android:text="%"
         android:textColor="#676767"
-        app:layout_constraintTop_toBottomOf="@id/tblbell"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
 

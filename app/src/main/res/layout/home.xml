@@ -21,7 +21,7 @@
             android:layout_height="58dp"
             android:backgroundTint="@color/font.biru"
             android:cursorVisible="false"
-            android:fontFamily="@font/JosefSemiBold"
+
             android:lineHeight="100sp"
             android:text="Tambah Barang"
             android:textAlignment="gravity"
@@ -57,7 +57,7 @@
             android:layout_width="135dp"
             android:layout_height="44dp"
             android:contentDescription="patungin"
-            android:fontFamily="@font/JosefBold"
+
             android:gravity="center"
             android:text="Patungin"
             android:textAlignment="center"
@@ -72,10 +72,11 @@
             android:id="@+id/notif"
             android:layout_width="53dp"
             android:layout_height="48dp"
-            android:background=""
+
             android:text="Button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.541"
             app:layout_constraintStart_toEndOf="@+id/Patungin"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -92,7 +93,7 @@
             android:id="@+id/Sisa.1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/OpenSansRegular"
+
             android:text="0"
             android:textColor="@color/font.biru"
             android:textSize="48sp"
@@ -123,7 +124,7 @@
         android:id="@+id/activity_head"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        app:layout_constraintBottom_toTopOf="@+id/activity_head.2"
+        app:layout_constraintBottom_toTopOf="@+id/Sisa.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/status_sisa">
 
@@ -135,7 +136,6 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="318dp"
             android:layout_marginBottom="10dp"
-            android:fontFamily="@font/JosefBold"
             android:text="Activity"
             android:textAlignment="viewStart"
             android:textSize="24sp"
@@ -152,7 +152,6 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="318dp"
-            android:fontFamily="@font/OpenSansRegular"
             android:text="Riwayat transaksi secara keseluruhan"
             android:textSize="15sp"
             android:textAlignment="viewStart"
@@ -166,7 +165,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="15dp"
-            android:fontFamily="@font/OpenSansExtraBold"
             android:text="View All"
             android:textAlignment="viewEnd"
             android:textSize="18sp"
@@ -179,9 +177,7 @@
         android:id="@+id/activity_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintStart_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/activity_head">
+>
 
         <ScrollView
             android:layout_width="0dp"
@@ -204,7 +200,6 @@
                     android:id="@+id/judul_act"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/JosefRegular"
                     android:text="Split Bill Starbucks"
                     android:textColor="@color/black"
                     android:textSize="20sp"
@@ -216,7 +211,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/OpenSansRegular"
+
                     android:text="Telah dibayar oleh Anda, Fariz, Nathan"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -226,7 +221,6 @@
                     android:id="@+id/nominal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/JosefRegular"
                     android:text="Rp200K"
                     android:textColor="@color/black"
                     android:textSize="20sp"
@@ -238,7 +232,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/OpenSansRegular"
                     android:text="Hari ini"
                     android:textAlignment="viewEnd"
                     android:textSize="12sp"
