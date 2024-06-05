@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".hasiltransaksi">
+
+    <ImageView
+        android:layout_width="44dp"
+        android:layout_height="34dp"
+        android:src="@drawable/patungin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/tblbell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/bell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bckbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/jdlSB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bckbtn"
+        android:layout_marginTop="30dp"
+        android:text="Split Bill"
+        android:textSize="15sp"
+        android:textColor="#3660F5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/jdlTT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/jdlSB"
+        android:text="Hasil Transaksi"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/hdrTT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/jdlTT"
+        android:text="Yayy, hasilmu sudah ditampilkan :D"
+        android:textSize="11sp"
+        android:textColor="#676767"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/TTtnpID"
+        android:layout_marginTop="50dp"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@drawable/button3"
+        android:text="%"
+        android:textColor="#676767"
+        app:layout_constraintTop_toBottomOf="@id/tblbell"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hdrTT"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/garisawal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="29dp"/>
+
+            <ImageView
+                android:id="@+id/prfl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/garisawal"
+                android:src="@drawable/profile"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Lintang AD's Total"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="IDR 20,000"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/text1"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <View
+                android:id="@+id/garis2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/text2"/>
+            <TextView
+                android:id="@+id/text3"
+                android:layout_marginTop="15dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="White Cream Sundae"
+                app:layout_constraintTop_toBottomOf="@id/garis2"/>
+            <TextView
+                android:id="@+id/qty1"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x1"
+                app:layout_constraintTop_toBottomOf="@id/garis2"
+                app:layout_constraintStart_toEndOf="@id/text3"/>
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="25,000"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@id/garis2"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/detilTrs1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Transaksi"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/text3"/>
+
+            <View
+                android:id="@+id/garis3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/detilTrs1"/>
+
+            <TextView
+                android:id="@+id/pjk1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ Pajak"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/garis3"/>
+
+            <TextView
+                android:id="@+id/bl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ Biaya Langganan"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/pjk1"/>
+
+            <TextView
+                android:id="@+id/amt1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="2,500"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/garis3"/>
+            <TextView
+                android:id="@+id/amt2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="2,500"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/amt1"/>
+            <TextView
+                android:id="@+id/amt3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="5,000"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/amt2"/>
+
+            <TextView
+                android:id="@+id/dsc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-- Diskon"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/bl1"/>
+
+            <TextView
+                android:id="@+id/ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-- Lain-lain"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/dsc1"/>
+            <View
+                android:id="@+id/garisp1"
+                android:layout_width="match_parent"
+                android:layout_height="2.097dp"
+                android:background="@drawable/garisputus"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/ll1"/>
+
+            <ImageView
+                android:id="@+id/prfl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/garisp1"
+                android:src="@drawable/profile2"/>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="Fariz's Total"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/garisp1"/>
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="IDR 20,000"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/text4"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <View
+                android:id="@+id/garis6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/text6"/>
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_marginTop="15dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="White Cream Sundae"
+                app:layout_constraintTop_toBottomOf="@id/garis6"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x1"
+                app:layout_constraintStart_toEndOf="@id/text7"
+                app:layout_constraintTop_toBottomOf="@id/garis6"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="25,000"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@id/garis6"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Transaksi"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/text7"/>
+
+            <View
+                android:id="@+id/garis7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/text8"/>
+
+            <TextView
+                android:id="@+id/pjk2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ Pajak"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/garis7"/>
+
+            <TextView
+                android:id="@+id/amt4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="2,500"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/garis7"/>
+
+            <TextView
+                android:id="@+id/amt5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="2,500"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/amt4"/>
+
+            <TextView
+                android:id="@+id/amt6"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="5,000"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/amt5"/>
+
+            <TextView
+                android:id="@+id/bL2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ Biaya Langganan"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/pjk2"/>
+
+            <TextView
+                android:id="@+id/Dsc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ Diskon"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/bL2"/>
+
+            <TextView
+                android:id="@+id/Ll2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ Lain-lain"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/Dsc2"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

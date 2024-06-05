@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test">
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginVertical="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/splitBillTextView"
+        app:srcCompat="@drawable/back" />
+
+    <!-- ImageButton 2 -->
+    <ImageView
+        android:id="@+id/imageButton2"
+        android:layout_width="44dp"
+        android:layout_height="34dp"
+        android:layout_marginVertical="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/patungin_vlack_2" />
+
+    <!-- ImageButton 3 -->
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bell" />
+
+    <TextView
+        android:id="@+id/splitBillTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Split Bill"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton1" />
+
+    <TextView
+        android:id="@+id/SplitBillDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pastikan bahwa barang yang akan ditambahkan sudah benar"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splitBillTextView" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SplitBillDesc"
+        app:layout_constraintBottom_toTopOf="@id/button1"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Content in ScrollView using ConstraintLayout -->
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_outline_text"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonContent2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButtonContent2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:padding="20dp"
+                android:src="@drawable/group_42"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_outline_text"
+                android:textSize="24sp"
+                app:layout_constraintTop_toBottomOf="@id/editText1" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edit_outline_text"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/editText5"
+                app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_outline_text"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
+            <View
+                android:id="@+id/garisputus"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/dashed_line"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/editText5"
+                />
+            <!-- Content in ScrollView using ConstraintLayout -->
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_outline_text"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonContent2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editText5" />
+
+            <ImageButton
+                android:id="@+id/imageButtonContent3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:padding="20dp"
+                android:src="@drawable/group_42"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editText5" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_outline_text"
+                android:textSize="24sp"
+                app:layout_constraintTop_toBottomOf="@id/editText6" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edit_outline_text"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/editText9"
+                app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_outline_text"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+            <View
+                android:id="@+id/garisputus2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/dashed_line"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/editText9" />
+
+            <ImageView
+                android:id="@+id/ImageTambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:src="@drawable/group_34"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/garisputus2" />
+
+            <TextView
+                android:id="@+id/textViewTambah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/blue"
+                android:text="Tambahkan barang"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@id/ImageTambah"
+                app:layout_constraintTop_toBottomOf="@id/garisputus2" />
+
+            <View
+                android:id="@+id/garisputus3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/dashed_line"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/textViewTambah" />
+
+            <TextView
+                android:id="@+id/textSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:text="Summary"
+                app:layout_constraintTop_toBottomOf="@id/garisputus3"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <View
+                android:id="@+id/garisputus4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/textSummary" />
+
+            <!-- TextView and EditText rows -->
+            <TextView
+                android:id="@+id/Rc11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Subtotal"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_gravity="start"
+                app:layout_constraintTop_toBottomOf="@id/garisputus4"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/Rc12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_gravity="end"
+                app:layout_constraintTop_toTopOf="@id/Rc11"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Row 2 -->
+            <TextView
+                android:id="@+id/Rc21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pajak"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="start"
+                app:layout_constraintTop_toBottomOf="@id/Rc11"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/Rc22"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:background="@drawable/edit_outline_text"
+                app:layout_constraintTop_toTopOf="@id/Rc21"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Row 3 -->
+            <TextView
+                android:id="@+id/Rc31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biaya Layanan"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="start"
+                app:layout_constraintTop_toBottomOf="@id/Rc21"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/Rc32"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:background="@drawable/edit_outline_text"
+                app:layout_constraintTop_toTopOf="@id/Rc31"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/Rc41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diskon"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="start"
+                app:layout_constraintTop_toBottomOf="@id/Rc32"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/Rc42"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:background="@drawable/edit_outline_text"
+                app:layout_constraintTop_toTopOf="@id/Rc41"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Row 5 -->
+            <TextView
+                android:id="@+id/Rc51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lain-lain"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="start"
+                app:layout_constraintTop_toBottomOf="@id/Rc41"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/Rc52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="-4"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_gravity="end"
+                app:layout_constraintTop_toTopOf="@id/Rc51"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Row 6 -->
+            <TextView
+                android:id="@+id/Rc61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Harga"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_gravity="start"
+                app:layout_constraintTop_toBottomOf="@id/Rc51"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/Rc62"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:background="@drawable/edit_outline_text"
+                app:layout_constraintTop_toTopOf="@id/Rc61"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="10dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#737A94"
+        android:background="@drawable/button1"
+        android:text="Konfirmasi Tagihan"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

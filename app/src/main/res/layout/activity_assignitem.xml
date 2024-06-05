@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".assignitem">
+
+    <ImageView
+        android:layout_width="44dp"
+        android:layout_height="34dp"
+        android:src="@drawable/patungin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/tblbell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/bell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bckbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/jdlSB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bckbtn"
+        android:layout_marginTop="30dp"
+        android:text="Split Bill"
+        android:textSize="15sp"
+        android:textColor="#3660F5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/jdlTT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/jdlSB"
+        android:text="Tetapkan Barang"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/hdrTT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/jdlTT"
+        android:text="Tetapkan barang setelah kamu memilih teman-teman mu"
+        android:textSize="11sp"
+        android:textColor="#676767"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/TTtnpID"
+        android:layout_marginTop="50dp"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@drawable/button3"
+        android:text="%"
+        android:textColor="#676767"
+        app:layout_constraintTop_toBottomOf="@id/tblbell"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <HorizontalScrollView
+        android:id="@+id/addFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/hdrTT"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/profile"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Fariz"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/profile2"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Lintang"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/profile3"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Nathan"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/profile"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rafi"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/profile2"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Daniswara"/>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addFriend"
+        app:layout_constraintBottom_toTopOf="@id/cariteman"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/garis1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="White Cream Sundae"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/garis1" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="0"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/text1" />
+
+            <ImageView
+                android:id="@+id/procil1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profilekecil"
+                app:layout_constraintTop_toBottomOf="@id/text2"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:text="1x"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/text5"
+                app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="20.000"
+                android:textSize="15sp"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:gravity="right"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+            <View
+                android:id="@+id/dashedline1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginTop="29dp"
+                app:layout_constraintTop_toBottomOf="@id/text2" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="Chocolate Cream Sundae"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dashedline1" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="0"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/text6" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profilekecil2"
+                app:layout_constraintTop_toBottomOf="@id/text7"/>
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:text="1x"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/text10"
+                app:layout_constraintTop_toBottomOf="@id/text6" />
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="25.000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/grey"
+
+                android:gravity="right"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text6" />
+
+            <View
+                android:id="@+id/dashedline2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginTop="29dp"
+                app:layout_constraintTop_toBottomOf="@id/text7" />
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="Vanilla Milkshake"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dashedline2" />
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="0"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/text11" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profilekecil3"
+                app:layout_constraintTop_toBottomOf="@id/text11"/>
+
+            <TextView
+                android:id="@+id/text13"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:text="1x"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/text15"
+                app:layout_constraintTop_toBottomOf="@id/text11" />
+
+            <TextView
+                android:id="@+id/text15"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="18.000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:textColor="@color/grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text11" />
+
+            <View
+                app:layout_constraintTop_toBottomOf="@id/text15"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginTop="29dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/cariteman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttoneunselected"
+        android:text="Konfirmasi"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

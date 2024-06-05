@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="font.judul">#000000</color>
+    <color name="font.isi">#676767</color>
+    <color name="font.biru">#3660F5</color>
+    <color name="pp1">#ff6a6a</color>
+    <color name="pp2">#ffa86a</color>
+    <color name="pp3">#ffe66a</color>
+    <color name="pp4">#daff6a</color>
+    <color name="pp5">#9cff6a</color>
+    <color name="pp6">#ffa86a</color>
+    <color name="pp7">#ff6aa8</color>
+    <color name="pp8">#ff6ae6</color>
+    <color name="pp9">#da6aff</color>
+    <color name="pp10">#9c6aff</color>
+</resources>
