@@ -4,40 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="40dp"
+    android:padding="20dp"
     tools:context=".assignitem">
 
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginVertical="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/splitBillTextView"
+        app:srcCompat="@drawable/back" />
+
+    <!-- ImageButton 2 -->
     <ImageView
+        android:id="@+id/imageButton2"
         android:layout_width="44dp"
         android:layout_height="34dp"
-        android:src="@drawable/patungin"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="40dp"
+        android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/patungin_vlack_2" />
 
+    <!-- ImageButton 3 -->
     <ImageButton
-        android:id="@+id/tblbell"
+        android:id="@+id/imageButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="40dp"
         android:background="@android:color/transparent"
-        android:src="@drawable/bell"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bell" />
 
-    <ImageButton
-        android:id="@+id/bckbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:src="@drawable/back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/jdlSB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/bckbtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton1"
         android:layout_marginTop="30dp"
         android:text="Split Bill"
         android:textSize="15sp"
@@ -68,14 +80,15 @@
 
     <Button
         android:id="@+id/TTtnpID"
-        android:layout_marginTop="50dp"
         android:layout_width="34dp"
         android:layout_height="34dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
         android:background="@drawable/button3"
         android:text="%"
         android:textColor="#676767"
-        app:layout_constraintTop_toBottomOf="@id/tblbell"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3"
         tools:ignore="MissingConstraints" />
 
     <HorizontalScrollView
@@ -189,21 +202,22 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <View
                 android:id="@+id/garis1"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/grey"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                android:background="@color/grey" />
 
             <TextView
                 android:id="@+id/text1"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
-                android:textSize="20sp"
                 android:text="White Cream Sundae"
                 android:textColor="@color/black"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/garis1" />
 
@@ -220,7 +234,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/profilekecil"
-                app:layout_constraintTop_toBottomOf="@id/text2"/>
+                app:layout_constraintTop_toBottomOf="@id/text2" />
 
             <TextView
                 android:id="@+id/text3"
@@ -236,11 +250,11 @@
                 android:id="@+id/text5"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
-                android:text="20.000"
-                android:textSize="15sp"
-                android:textColor="@color/grey"
-                android:textStyle="bold"
                 android:gravity="right"
+                android:text="20.000"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text1" />
 
@@ -248,8 +262,8 @@
                 android:id="@+id/dashedline1"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/grey"
                 android:layout_marginTop="29dp"
+                android:background="@color/grey"
                 app:layout_constraintTop_toBottomOf="@id/text2" />
 
             <TextView
@@ -257,9 +271,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
-                android:textSize="20sp"
                 android:text="Chocolate Cream Sundae"
                 android:textColor="@color/black"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/dashedline1" />
 
@@ -275,7 +289,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/profilekecil2"
-                app:layout_constraintTop_toBottomOf="@id/text7"/>
+                app:layout_constraintTop_toBottomOf="@id/text7" />
 
             <TextView
                 android:id="@+id/text8"
@@ -291,12 +305,12 @@
                 android:id="@+id/text10"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
-                android:text="25.000"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:textColor="@color/grey"
-
                 android:gravity="right"
+                android:text="25.000"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text6" />
 
@@ -304,17 +318,18 @@
                 android:id="@+id/dashedline2"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/grey"
                 android:layout_marginTop="29dp"
+                android:background="@color/grey"
                 app:layout_constraintTop_toBottomOf="@id/text7" />
+
             <TextView
                 android:id="@+id/text11"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
-                android:textSize="20sp"
                 android:text="Vanilla Milkshake"
                 android:textColor="@color/black"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/dashedline2" />
 
@@ -330,7 +345,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/profilekecil3"
-                app:layout_constraintTop_toBottomOf="@id/text11"/>
+                app:layout_constraintTop_toBottomOf="@id/text11" />
 
             <TextView
                 android:id="@+id/text13"
@@ -346,20 +361,20 @@
                 android:id="@+id/text15"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
+                android:gravity="right"
                 android:text="18.000"
+                android:textColor="@color/grey"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:gravity="right"
-                android:textColor="@color/grey"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text11" />
 
             <View
-                app:layout_constraintTop_toBottomOf="@id/text15"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginTop="29dp"
                 android:background="@color/grey"
-                android:layout_marginTop="29dp"/>
+                app:layout_constraintTop_toBottomOf="@id/text15" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
